@@ -1,0 +1,41 @@
+site_name: GitHub Actions Demo
+site_url: https://wasikahmed.github.io/GitHub-Actions-Demo
+site_description: A documentation for Python basics with examples and notebooks.
+
+repo_url: https://github.com/WasikAhmed/GitHub-Actions-Demo
+repo_name: WasikAhmed/GitHub-Actions-Demo
+
+theme:
+  name: material
+  # logo: assets/your-logo.png
+  # favicon: assets/your-logo.png
+  features:
+    - navigation.instant
+    - navigation.top
+  palette:
+    primary: blue
+    accent: light-blue
+
+markdown_extensions:
+  - meta
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+ - mkdocs-jupyter:
+    include_source: True
+ - search
+ - social
+
+edit_uri: ""
+
+nav:
+  - Home: 'index.md'
+  - Python Basics: 'python_basics.ipynb'
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/WasikAhmed/GitHub-Actions-Demo
